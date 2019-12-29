@@ -19,18 +19,19 @@ class MyApp extends StatelessWidget {
       title: 'Platzi Trips',
       theme: ThemeData(),
       home: Scaffold(
-          body: Stack(
-        children: <Widget>[
-          ListView(
-            children: <Widget>[
-              new DescriptionPlace("Bahamas", 4,
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."),
-              new ReviewList(),
-            ],
-          ),
-          HeaderAppBar()
-        ],
-      )),
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("Bahamas", 4,
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."),
+                ReviewList(),
+              ],
+            ),
+            HeaderAppBar(),
+          ],
+        ),
+      ),
     );
   }
 }

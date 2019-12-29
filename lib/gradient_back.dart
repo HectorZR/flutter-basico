@@ -19,10 +19,11 @@ class GradientBack extends StatelessWidget {
       child: Text(
         this.title,
         style: TextStyle(
-            color: Colors.white,
-            fontSize: 30.0,
-            fontFamily: "Lato",
-            fontWeight: FontWeight.bold),
+          color: Colors.white,
+          fontSize: 30.0,
+          fontFamily: "Lato",
+          fontWeight: FontWeight.bold,
+        ),
       ),
       alignment: Alignment(-0.9, -0.6),
     );
