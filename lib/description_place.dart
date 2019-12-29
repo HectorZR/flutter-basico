@@ -12,10 +12,7 @@ class DescriptionPlace extends StatelessWidget {
     // TODO: implement build
 
     final star_half = Container(
-      margin: EdgeInsets.only(
-        top: 220.0,
-        right: 3.0
-      ),
+      margin: EdgeInsets.only(top: 340.0, right: 3.0),
       child: Icon(
         Icons.star_half,
         color: Color(0xFFf2C611),
@@ -23,10 +20,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final star_border = Container(
-      margin: EdgeInsets.only(
-        top: 220.0,
-        right: 3.0
-      ),
+      margin: EdgeInsets.only(top: 220.0, right: 3.0),
       child: Icon(
         Icons.star_border,
         color: Color(0xFFf2C611),
@@ -34,10 +28,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final star = Container(
-      margin: EdgeInsets.only(
-        top: 220.0,
-        right: 3.0
-      ),
+      margin: EdgeInsets.only(top: 340.0, right: 3.0),
       child: Icon(
         Icons.star,
         color: Color(0xFFf2C611),
@@ -53,11 +44,10 @@ class DescriptionPlace extends StatelessWidget {
       child: new Text(
         this.descriptionPlace,
         style: const TextStyle(
-          fontSize: 16.0,
-          fontFamily: "Lato",
-          fontWeight: FontWeight.bold,
-          color: Color(0xFF56575a)
-        ),
+            fontSize: 16.0,
+            fontFamily: "Lato",
+            fontWeight: FontWeight.bold,
+            color: Color(0xFF56575a)),
       ),
     );
 
@@ -65,21 +55,19 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-            top: 220.0,
+            top: 340.0,
             left: 20.0,
             right: 20.0,
           ),
           child: Text(
             this.namePlace,
             style: TextStyle(
-              fontSize: 30.0,
-              fontFamily: "Lato",
-              fontWeight: FontWeight.w900
-            ),
+                fontSize: 30.0,
+                fontFamily: "Lato",
+                fontWeight: FontWeight.w900),
             textAlign: TextAlign.left,
           ),
         ),
-
         Row(
           children: <Widget>[
             star,

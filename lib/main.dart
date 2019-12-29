@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'description_place.dart';
 import 'review_list.dart';
-import 'gradient_back.dart';
+import 'header_appbar.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      systemNavigationBarColor: Colors.transparent,
+      statusBarColor: Colors.transparent));
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       title: 'Platzi Trips',
       theme: ThemeData(),
       home: Scaffold(
@@ -22,7 +28,7 @@ class MyApp extends StatelessWidget {
               new ReviewList(),
             ],
           ),
-          GradientBack('Popular')
+          HeaderAppBar()
         ],
       )),
     );
