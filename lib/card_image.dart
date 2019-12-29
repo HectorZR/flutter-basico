@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CardImage extends StatelessWidget {
   String pathImage = 'assets/img/beach_palm.jpeg';
 
-  CardImage(pathImage);
+  CardImage(this.pathImage);
   @override
   Widget build(BuildContext context) {
     final card = Container(
