@@ -7,14 +7,14 @@ import '../utils/button_grey.dart';
 class HeaderProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return Column(
       children: <Widget>[
-        GradientBack(
-          title: "Perfil",
-          height: 400.0,
-        ),
+        // GradientBack(
+        //   title: "Perfil",
+        //   height: 400.0,
+        // ),
         Container(
-          padding: EdgeInsets.only(top: 100.0),
+          margin: EdgeInsets.only(top: 100.0),
           child: Row(
             children: <Widget>[
               Photo("assets/img/people.jpg"),
@@ -23,19 +23,19 @@ class HeaderProfile extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.only(top: 25.0),
+          // margin: EdgeInsets.only(top: 25.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               ButtonGrey(Icon(Icons.bookmark_border),
-                  iconSize: 40.0, strong: true),
-              ButtonGrey(Icon(Icons.card_giftcard), iconSize: 40.0),
+                  iconSize: 35.0, strong: true),
+              ButtonGrey(Icon(Icons.card_giftcard), iconSize: 35.0),
               ButtonGrey(Icon(Icons.add), iconSize: 50.0, strong: true),
-              ButtonGrey(Icon(Icons.email), iconSize: 40.0),
-              ButtonGrey(Icon(Icons.person_outline), iconSize: 40.0),
+              ButtonGrey(Icon(Icons.email), iconSize: 35.0),
+              ButtonGrey(Icon(Icons.person_outline), iconSize: 35.0),
             ],
           ),
-        )
+        ),
       ],
     );
   }

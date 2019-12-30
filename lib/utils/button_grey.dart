@@ -15,7 +15,7 @@ class ButtonGrey extends StatelessWidget {
         borderRadius: BorderRadius.circular(50),
         color: this.strong ? Colors.white : Colors.grey,
       ),
-      margin: EdgeInsets.only(top: 200.0, left: 10.0, right: 10.0),
+      margin: EdgeInsets.only(top: 30.0, left: 10.0, right: 10.0),
       child: IconButton(
         icon: this.buttonIcon,
         iconSize: this.iconSize,
