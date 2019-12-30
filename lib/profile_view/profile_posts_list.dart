@@ -16,8 +16,8 @@ class ProfilePostsList extends StatelessWidget {
                 'Hiking. Water fall hunting. Natural bath, Scenery & Photography',
             steps: 'Steps 123,123,123',
           ),
-          ProfilePost("assets/img/river.jpeg"),
-          ProfilePost("assets/img/river.jpeg"),
+          ProfilePost("assets/img/sunset.jpeg"),
+          ProfilePost("assets/img/mountain.jpeg"),
         ],
       ),
     );

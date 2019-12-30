@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class FloatingActionButtonGreen extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
+  _FloatingActionButtonGreen createState() {
     return _FloatingActionButtonGreen();
   }
 }

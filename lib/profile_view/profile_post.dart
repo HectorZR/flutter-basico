@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:align_positioned/align_positioned.dart';
+import '../floating_action_button_green.dart';
 
 class ProfilePost extends StatelessWidget {
   String imagePath = '';
@@ -29,7 +31,6 @@ class ProfilePost extends StatelessWidget {
 
     final frontDescription = Container(
       padding: EdgeInsets.all(20.0),
-      // margin: EdgeInsets.only(top: 180.0),
       width: 275.0,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -75,7 +76,13 @@ class ProfilePost extends StatelessWidget {
       alignment: Alignment(0.0, 0.5),
       children: <Widget>[
         imageBack,
-        frontDescription,
+        Stack(
+          alignment: Alignment(0.9, 1.4),
+          children: <Widget>[
+            frontDescription,
+            FloatingActionButtonGreen(),
+          ],
+        )
       ],
     );
   }
