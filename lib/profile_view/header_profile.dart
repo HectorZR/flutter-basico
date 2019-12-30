@@ -17,7 +17,7 @@ class HeaderProfile extends StatelessWidget {
           padding: EdgeInsets.only(top: 100.0),
           child: Row(
             children: <Widget>[
-              Photo("assets/img/ann.jpg"),
+              Photo("assets/img/people.jpg"),
               UserDetails("Hector Zurga", "mail@test.com")
             ],
           ),
@@ -27,11 +27,12 @@ class HeaderProfile extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              ButtonGrey(Icon(Icons.bookmark_border), 40.0),
-              ButtonGrey(Icon(Icons.card_giftcard), 40.0),
-              ButtonGrey(Icon(Icons.add), 50.0),
-              ButtonGrey(Icon(Icons.email), 40.0),
-              ButtonGrey(Icon(Icons.person_outline), 40.0),
+              ButtonGrey(Icon(Icons.bookmark_border),
+                  iconSize: 40.0, strong: true),
+              ButtonGrey(Icon(Icons.card_giftcard), iconSize: 40.0),
+              ButtonGrey(Icon(Icons.add), iconSize: 50.0, strong: true),
+              ButtonGrey(Icon(Icons.email), iconSize: 40.0),
+              ButtonGrey(Icon(Icons.person_outline), iconSize: 40.0),
             ],
           ),
         )
