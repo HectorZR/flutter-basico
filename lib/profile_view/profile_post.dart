@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:align_positioned/align_positioned.dart';
 import '../floating_action_button_green.dart';
 
 class ProfilePost extends StatelessWidget {
